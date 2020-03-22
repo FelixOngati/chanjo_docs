@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Analysis and Reports &mdash; ChanjoTrack 1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="3. User Management" href="user_management.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ChanjoTrack
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="login.html">1. Logging into the Web Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dashboard.html">2. Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_management.html">3. User Management</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Analysis and Reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#generating-tabular-reports">4.1. Generating Tabular Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filtering-report">4.2. Filtering Report</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ChanjoTrack</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li><span class="section-number">4. </span>Analysis and Reports</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/reports.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="analysis-and-reports">
+<h1><span class="section-number">4. </span>Analysis and Reports<a class="headerlink" href="#analysis-and-reports" title="Permalink to this headline">¶</a></h1>
+<p>All reports in the system can be accessed via the Reports module on the left menu bar. For ease of generation, the reports have been grouped into four main categories;</p>
+<ol class="arabic">
+<li><p>Tabular Reports consisting of;</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Birth Register</p></li>
+<li><p>Immunization Register</p></li>
+<li><p>Defaulters List</p></li>
+<li><p>Defaulters List by Vaccines</p></li>
+<li><p>SMS Reminders</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>MoH 710 Report</p></li>
+<li><p>Vaccination Report</p></li>
+<li><p>Timeliness Report</p></li>
+</ol>
+<p>Note that when generating reports, the organization unit will be limited depending on your role and the County/Subcounty/Ward/Facility that you have been assigned.</p>
+<div class="section" id="generating-tabular-reports">
+<h2><span class="section-number">4.1. </span>Generating Tabular Reports<a class="headerlink" href="#generating-tabular-reports" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>From the left menu panel, click on <strong>Reports</strong> then <strong>Tabular Reports</strong>.</p></li>
+</ol>
+<img alt="_images/generate_report.png" src="_images/generate_report.png" />
+<p><strong>Image 11:</strong> <em>Generate Tabular Reports</em></p>
+<ol class="arabic simple" start="2">
+<li><p>Your assigned facility will be selected by default. If you are a county or subcounty user, you can change ward and facility by selecting from the dropdowns accordingly.</p></li>
+<li><p>Select the report you want to generate from the Report Type dropdown list;</p></li>
+</ol>
+<img alt="_images/report_type.png" src="_images/report_type.png" />
+<p><strong>Image 12:</strong> <em>Report Type</em></p>
+<ol class="arabic simple" start="4">
+<li><p>Click on the Generate Report button to generate your report.</p></li>
+<li><p>Click on the Download Report button to download your report</p></li>
+</ol>
+</div>
+<div class="section" id="filtering-report">
+<h2><span class="section-number">4.2. </span>Filtering Report<a class="headerlink" href="#filtering-report" title="Permalink to this headline">¶</a></h2>
+<p>All reports columns in the system can be filtered based on the criteria of interest. For example, Birth Register can be filtered based on Birth Number, Birth Date, Registration Date or a child’s first, last and/or middle name. This enables searching of records of a particular interest. To filter a report;</p>
+<ol class="arabic simple">
+<li><p>Click on the Filter Columns button;</p></li>
+</ol>
+<img alt="_images/filter_report.png" src="_images/filter_report.png" />
+<p><strong>Image 13:</strong> <em>Filter Columns</em></p>
+<ol class="arabic simple" start="2">
+<li><p>Select the columns/fields you want to filter/search with</p></li>
+</ol>
+<img alt="_images/filter_columns.png" src="_images/filter_columns.png" />
+<p><strong>Image 14:</strong> <em>Colums to Filter</em></p>
+<ol class="arabic simple" start="3">
+<li><p>Specify the criteria and click Apply Filters</p></li>
+</ol>
+<img alt="_images/filter_criteria.png" src="_images/filter_criteria.png" />
+<p><strong>Image 15:</strong> <em>Filter Criteria</em></p>
+<ol class="arabic simple" start="4">
+<li><p>Click on the Generate Report button to generate a report with the filters applied.</p></li>
+</ol>
+<p>All the other (MoH 710, Vaccination Report and Timeliness Report)  reports can be generated the same way as tabular reports above; by clicking on the report name from the left menu bar.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="user_management.html" class="btn btn-neutral float-left" title="3. User Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, FESK
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

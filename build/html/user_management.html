@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. User Management &mdash; ChanjoTrack 1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. Analysis and Reports" href="reports.html" />
+    <link rel="prev" title="2. Dashboard" href="dashboard.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ChanjoTrack
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="login.html">1. Logging into the Web Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dashboard.html">2. Dashboard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. User Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#user-roles">3.1. User Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-a-new-user">3.2. Adding a New User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assigning-roles">3.3. Assigning Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assigning-organization-unit">3.4. Assigning Organization Unit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reports.html">4. Analysis and Reports</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ChanjoTrack</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li><span class="section-number">3. </span>User Management</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/user_management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-management">
+<h1><span class="section-number">3. </span>User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="user-roles">
+<h2><span class="section-number">3.1. </span>User Roles<a class="headerlink" href="#user-roles" title="Permalink to this headline">¶</a></h2>
+<p>The web based system implements role based access control; meaning different functionalities in the system are accessed based on privileges tied to your user account. There are four main user roles in the system;</p>
+<ul class="simple">
+<li><p>Facility → Capture data, view/download reports limited to their facilities</p></li>
+<li><p>Subcounty  → Create/Update Facility Users, view/download reports limited to their sub counties and wards and facilities within their respective sub counties.</p></li>
+<li><p>National → View reports at national level and able to drill down to counties, sub counties, wards and facilities</p></li>
+<li><p>Admin → Can do everything legal</p></li>
+</ul>
+<p>Image 4 below shows a dashboard for a Facility user role. Take note of the limited menu items;</p>
+<img alt="_images/dashboard.png" src="_images/dashboard.png" />
+<p><strong>Image 4:</strong> <em>Facility Dashboard</em></p>
+</div>
+<div class="section" id="adding-a-new-user">
+<h2><span class="section-number">3.2. </span>Adding a New User<a class="headerlink" href="#adding-a-new-user" title="Permalink to this headline">¶</a></h2>
+<p>Accounts for new users can be created by clicking on the USER DETAILS menu item on the left bar menu and selecting ADD USER as shown on image 5 below;</p>
+<img alt="_images/add_user.png" src="_images/add_user.png" />
+<p><strong>Image 5:</strong> <em>Add new user</em>
+The user management module is not available for Facility roles. When adding a new user, it is important to take note of the following;</p>
+<ol class="arabic simple">
+<li><p>Email address should be correct since account credentials will be sent to the new user via the email provided.</p></li>
+<li><p>Phone numbers should start with 254 without the + sign and should be unique. Same phone number cannot be used to register more than one account.</p></li>
+<li><p>Conventionally, the username should be in the format firstname lastname combined, e.g. iannjeru for a user by the name Ian Njeru; all in small letters.</p></li>
+<li><p>All users must be assigned a role and an organization unit.</p></li>
+</ol>
+<p>Once all the details have been provided correctly, click on Submit to create the account, a success message will be displayed as on image 6 below;</p>
+<img alt="_images/success_account.png" src="_images/success_account.png" />
+<p><strong>Image 6:</strong> <em>User Account Creation Successful</em></p>
+<p>If an error is thrown, most probably you are using an already registered phone number.</p>
+</div>
+<div class="section" id="assigning-roles">
+<h2><span class="section-number">3.3. </span>Assigning Roles<a class="headerlink" href="#assigning-roles" title="Permalink to this headline">¶</a></h2>
+<p>Once the account has been created by the above process, the next step is to assign the new user an appropriate role. Creating a new user successfully will redirect you to a list of users. Most of the time, the newly created account will be the first on the list. Click on the Edit User icon (image 7) to assign a role to the new account (image 8).</p>
+<img alt="_images/edit_user.png" src="_images/edit_user.png" />
+<p><strong>Image 7:</strong> <em>Edit User</em></p>
+<img alt="_images/assign_role_button.png" src="_images/assign_role_button.png" />
+<p><strong>Image 8:</strong> <em>Assign Role Button</em></p>
+<img alt="_images/assign_role.png" src="_images/assign_role.png" />
+<p><strong>Image 8:</strong> <em>Assign Role</em></p>
+</div>
+<div class="section" id="assigning-organization-unit">
+<h2><span class="section-number">3.4. </span>Assigning Organization Unit<a class="headerlink" href="#assigning-organization-unit" title="Permalink to this headline">¶</a></h2>
+<p>The procedure is similar to assigning roles as described above, except that you click on the Assign Facility button as below;</p>
+<img alt="_images/assign_facility.png" src="_images/assign_facility.png" />
+<p><strong>Image 10:</strong> <em>Assign Facility</em></p>
+<p>Note that when generating reports, users will be limited based on the organization unit they have been assigned. For facility users who capture data using USSD, only one facility should be assigned at a time.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="reports.html" class="btn btn-neutral float-right" title="4. Analysis and Reports" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dashboard.html" class="btn btn-neutral float-left" title="2. Dashboard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, FESK
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
